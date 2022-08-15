@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+/* ----------- index.php ---------- */
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #111;
+}
+header {
+  height: 3.5rem;
+  background-color: #ea0000;
+}
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  line-height: 3.5rem;
+  position: relative;
+}
+nav .lang_switcher {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 12px;
+}
+.lang_switcher span {
+  color: #fff;
+}
+a, button {
+  transition: 0.3s;
+}
+nav .nav-title {
+  margin-left: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover,
+button:hover {
+  opacity: 0.8;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.home {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 7rem);
+  padding: 1.75rem 0.75rem 2.75rem;
+}
+.home h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+.home p {
+  margin-bottom: 4.5rem;
+  font-size: 1.25rem;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #111;
+  text-decoration: none;
+  background-color: #eac300;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
+}
+footer {
+  height: 3.5rem;
+  background-color: #fafafa;
+}
+.copyright {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 3.5rem;
+  color: #555;
+  text-align: center;
+}
+
+/* ---------- read.php ---------- */
+.products {
+  box-sizing: border-box;
+  min-height: calc(100vh - 7rem);
+  padding: 30px 0 55px;
+}
+.products h1 {
+  margin: 0 0 30px;
+  font-size: 1.75rem;
+}
+.products-ui {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 12px;
+  margin-bottom: 25px;
+}
+.products-ui div {
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 959px) {
+  .products-ui {
+    flex-direction: column;
+    align-items: center;
+  }
+  .products-ui div {
+    margin-bottom: 20px;
+  }
+}
+.sort-img {
+  height: 2.5rem;
+  vertical-align: top;
+}
+.search-form {
+  margin-left: 12px;
+}
+.search-box {
+  box-sizing: border-box;
+  width: 200px;
+  height: 2.5rem;
+  padding: 4px 8px;
+  font-size: 1rem;
+  background: #eee;
+  border: none;
+  outline: 0;
+}
+.products-table {
+  width: 100%;
+  margin: 0 auto;
+  word-break: break-all;
+  border-collapse: collapse;
+}
+.products-table tr {
+  border-bottom: solid 1px #d9d9d9;
+}
+.products-table tr:first-child {
+  border-bottom: solid 3px #d9d9d9;
+}
+.products-table th, .products-table td {
+  padding: 1rem 0.75rem 1rem 0;
+  text-align: center;
+}
+.products-table th:first-child, .products-table td:first-child {
+  padding: 1rem 0.75rem;
+  text-align: center;
+}
+.success {
+  color: #28a745;
+  font-size: 1.2rem;
+}
+.edit-icon, .delete-icon {
+  height: 1.5rem;
+  vertical-align: top;
+}
+
+/* --------- create.php --------- */
+.registration {
+  box-sizing: border-box;
+  max-width: 320px;
+  min-height: calc(100vh - 7rem);
+  padding: 30px 12px 25px;
+  margin: 0 auto;
+}
+.registration h1 {
+  margin: 0 0 30px;
+  font-size: 1.75rem;
+}
+.back {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.registration p {
+  text-align: left;
+}
+.registration-form div {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin-bottom: 25px;
+}
+.registration-form label {
+  margin-top: 12px;
+  text-align: left;
+}
+.registration-form label:first-child {
+  margin-top: 0;
+}
+.registration-form input, .registration-form select {
+  box-sizing: border-box;
+  height: 1.75rem;
+}
+.submit-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.1rem;
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #eac300;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
+}
